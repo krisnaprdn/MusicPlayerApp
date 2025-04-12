@@ -1,7 +1,10 @@
+import org.gradle.kotlin.dsl.testImplementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -56,6 +59,11 @@ dependencies {
     debugImplementation(libs.library)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.okhttp)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.kotlinx.coroutines.test)
+    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+    implementation("com.google.firebase:firebase-analytics")
 
     //Image Processing
     implementation(libs.glide)
