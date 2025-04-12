@@ -2,10 +2,11 @@ package com.myapp.musicplayerapp.ui.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.myapp.musicplayerapp.domain.model.MusicDomain
-import com.myapp.musicplayerapp.domain.repository.MusicRepository
-import com.myapp.musicplayerapp.ui.mapper.MusicMapper
-import com.myapp.musicplayerapp.ui.model.MusicUI
+import com.myapp.domain.model.MusicDomain
+import com.myapp.domain.MusicRepository
+import com.myapp.ui.mapper.MusicMapper
+import com.myapp.ui.model.MusicUI
+import com.myapp.ui.viewmodel.MusicViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.*
