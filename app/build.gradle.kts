@@ -62,7 +62,8 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.mockito.core)
     testImplementation(libs.kotlinx.coroutines.test)
-    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+    testImplementation(libs.androidx.core.testing)
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
     implementation("com.google.firebase:firebase-analytics")
 
     //Image Processing
